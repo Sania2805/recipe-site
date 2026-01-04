@@ -1,0 +1,94 @@
+h1{
+    color: #2f7d57;
+}
+p{
+  color: black;
+}
+.search-bar {
+  position: relative;
+  width: 600px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 10px 120px 10px 15px; /* extra right padding for button */
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.1), inset 2px 0 4px rgba(0,0,0,0.1), 2px 8px 5px rgba(0,0,0,0.1);
+}
+
+.search-bar button {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  border: none;
+  background-color: #2f7d57;
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border-radius: 5px 5px 5px 5px; /* round only the right side */
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.search-bar button:hover {
+  background-color: #ff4b4b;
+}
+
+
+.hero-container {
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  height: 60vh;
+  margin-left: 0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  
+  position: relative;
+  color: white;
+}
+
+.hero-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  backdrop-filter: blur(0px);
+  
+  z-index: 0;
+}
+
+
+.hero-container h1,
+.hero-container h3,
+.hero-container .search-bar {
+  position: relative;
+  
+  .hero-image {
+  height: 40vh; 
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+    margin-left:0;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  color: white;
+}
+
+}
