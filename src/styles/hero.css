@@ -6,7 +6,8 @@ p{
 }
 .search-bar {
   position: relative;
-  width: 600px;
+  width: 100%;
+  max-width: 600px;
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -91,4 +92,43 @@ p{
   color: white;
 }
 
+}
+
+@media (max-width: 768px) {
+  .hero-container {
+    height: 50vh;
+    padding: 1rem;
+  }
+
+  .search-bar input {
+    padding: 8px 100px 8px 12px;
+  }
+
+  .search-bar button {
+    padding: 8px 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-container {
+    height: 40vh;
+    padding: 0.5rem;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  p {
+    font-size: 0.9em;
+  }
+
+  .search-bar input {
+    font-size: 14px;
+  }
+
+  .search-bar button {
+    font-size: 14px;
+    padding: 6px 12px;
+  }
 }

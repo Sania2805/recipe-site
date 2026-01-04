@@ -79,6 +79,21 @@
   .ingredient-input-section input {
     width: 100%;
   }
+
+  .ingredient-search-container {
+    padding: 1rem;
+    margin: 1rem auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .ingredient-search-container {
+    padding: 0.5rem;
+  }
+
+  .ingredient-search-btn {
+    padding: 0.6rem 1.5rem;
+  }
 }
 .no-results-msg {
   text-align: center;
