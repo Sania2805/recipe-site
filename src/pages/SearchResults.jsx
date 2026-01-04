@@ -1,6 +1,6 @@
 import React from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import "../styles/popular-recipe.css"; // reuse card/grid styles
+import "../styles/popular-recipe.css"; 
 
 const SearchResults = () => {
   const location = useLocation();
@@ -16,7 +16,31 @@ const SearchResults = () => {
       </div>
     );
   }
+  const getMockTime = () => Math.floor(Math.random() * (60 - 15 + 1)) + 15;
+  const isNonVeg = (meal) => {
+      const nonVegKeywords = [
+        "beef",
+        "pork",
+        "chicken",
+        "meat",
+        "fish",
+        "seafood",
+        "egg",
+        "lamb",
+        "shrimp",
+        "crab",
+        "mutton",
+        "turkey",
+        "duck",
+      ];
 
+      const name = meal.strMeal?.toLowerCase() || "";
+      const category = meal.strCategory?.toLowerCase() || "";
+
+      return nonVegKeywords.some(
+        (word) => name.includes(word) || category.includes(word)
+      );
+};
   return (
     <div className="popular-recipe-container">
       <h2>Search Results for "{query}"</h2>
@@ -29,6 +53,17 @@ const SearchResults = () => {
           >
             <img src={recipe.strMealThumb} alt={recipe.strMeal} />
             <h3 className="recipe-title">{recipe.strMeal}</h3>
+            <p>
+              <div
+                className="dot"
+                style={{
+                  backgroundColor: isNonVeg(recipe) ? "#dc2626" : "#2f7d57",
+                }}
+              ></div>
+              {getMockTime()} mins |{" "}
+                {isNonVeg(recipe) ? "Non-veg" : "Vegetarian"}
+              
+            </p>
           </div>
         ))}
       </div>
