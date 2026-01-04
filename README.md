@@ -1,18 +1,123 @@
-# React + Vite
+# 🍽️ Recipe Finder App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern **React-based Recipe Finder application** that allows users to search recipes by ingredients or keywords, explore popular meals, and view detailed cooking instructions — powered by **TheMealDB API**.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+🔗 **Live Demo:** https://everydaymeals.netlify.app/
 
-## React Compiler
+---
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+## ✨ Features
 
-Note: This will impact Vite dev & build performances.
+* 🔍 Search recipes by ingredient or meal name
+* 🧾 View detailed recipe information (ingredients & instructions)
+* 🍲 Popular recipes section
+* 🔄 Smooth navigation with React Router
+* 📱 Fully responsive UI
+* ⚡ Fast performance using Vite
+* 🌐 Free public API (no authentication required)
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 🛠️ Tech Stack
+
+* **Frontend:** React JS
+* **Styling:** CSS
+* **Routing:** React Router DOM
+* **Build Tool:** Vite
+* **API:** TheMealDB API
+* **Deployment:** Netlify
+* **Version Control:** Git & GitHub
+
+---
+
+
+## 🚀 Getting Started (Local Setup)
+
+### 1️⃣ Clone the repository
+
+```bash
+git clone https://github.com/Sania2805/recipe-site.git
+cd recipe-finder
+```
+
+### 2️⃣ Install dependencies
+
+```bash
+npm install
+```
+
+### 3️⃣ Start the development server
+
+```bash
+npm run dev
+```
+
+The app will run at:
+
+```
+http://localhost:5173
+```
+
+---
+
+## 🌐 Deployment (Netlify)
+
+* Connected directly to GitHub
+* Auto-deploys on every push to `main`
+* No environment variables required (TheMealDB is public)
+
+### Build Settings:
+
+```txt
+Build Command: npm run build
+Publish Directory: dist
+```
+
+---
+
+
+## 🧠 Learnings
+
+* Consuming REST APIs in React
+* Conditional rendering & state management
+* Client-side routing with React Router
+* Handling navigation and browser back behavior
+* Deploying Vite + React apps on Netlify
+
+---
+
+## 🔮 Future Enhancements
+
+* ❤️ Add favorite meals feature
+* 🥗 Filter recipes by category or area
+* 🌙 Dark mode support
+* ⏳ Skeleton loaders
+* 📌 Save recent searches
+
+---
+
+## 🙌 Acknowledgements
+
+* [TheMealDB API](https://www.themealdb.com/)
+* React & Vite documentation
+* Netlify for free hosting
+
+---
+
+## 📬 Contact
+
+**Sania Ghosh**
+👩‍💻 Computer Science Engineering Student
+🌱 Aspiring Full-Stack Developer
+
+📧 Email: saniaghosh965@gmail.com
+
+🔗 GitHub: [https://github.com/Sania2805](https://github.com/Sania2805)
+
+---
+
+⭐ If you like this project, don’t forget to **star the repo**!
+
+
