@@ -30,7 +30,7 @@ const RecipeDetails = () => {
 
   return (
     <div className="recipe-details-container">
-      <button onClick={() => navigate("/")} className="back-btn">
+      <button onClick={() => navigate(-1)} className="back-btn">
         ← Back
       </button>
       <h2>{recipe.strMeal}</h2>

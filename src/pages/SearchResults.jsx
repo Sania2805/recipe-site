@@ -43,6 +43,9 @@ const SearchResults = () => {
 };
   return (
     <div className="popular-recipe-container">
+        <button onClick={() => navigate("/")} className="back-btn">
+        ← Back
+      </button>
       <h2>Search Results for "{query}"</h2>
       <div className="recipe-grid">
         {results.map((recipe) => (
