@@ -1,0 +1,88 @@
+.ingredient-search-container {
+  max-width: 1000px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px #2f7d57;
+  text-align: center;
+}
+
+.ingredient-search-container h2 {
+  font-size: 1.8rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.ingredient-search-container p {
+  color: #6b7280;
+  margin-bottom: 1.5rem;
+}
+
+
+.ingredient-input-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.ingredient-input-section input {
+  padding: 0.6rem 0.8rem;
+  border-radius: 12px;
+  border: 1px solid #d1d5db;
+  min-width: 220px;
+  flex-grow: 1;
+}
+
+.ingredient-chip {
+  background-color: #e6f4ea; 
+  color: #2f7d57;
+  padding: 0.5rem 0.8rem;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: default;
+}
+
+.ingredient-chip span {
+  margin-left: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+
+.ingredient-search-btn {
+  background-color: #2f7d57;
+  color: white;
+  border: none;
+  padding: 0.8rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.ingredient-search-btn:hover {
+  background-color: #166534;
+}
+
+
+@media (max-width: 768px) {
+  .ingredient-input-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .ingredient-input-section input {
+    width: 100%;
+  }
+}
+.no-results-msg {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: #6b7280;
+  font-size: 0.95rem;
+}

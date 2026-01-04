@@ -8,7 +8,7 @@ const Hero = () => {
   const navigate = useNavigate();
 
   const handleSearch = async () => {
-    if (!query.trim()) return; // do nothing if empty
+    if (!query.trim()) return; 
 
     try {
       const res = await fetch(
@@ -21,7 +21,7 @@ const Hero = () => {
         return;
       }
 
-      // Navigate to a search results page, passing the results
+      
       navigate("/search", { state: { results: data.meals, query } });
     } catch (err) {
       console.error("Error fetching search results:", err);
@@ -29,7 +29,7 @@ const Hero = () => {
     }
   };
 
-  // Trigger search on Enter key
+  
   const handleKeyPress = (e) => {
     if (e.key === "Enter") handleSearch();
   };
